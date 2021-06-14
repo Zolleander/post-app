@@ -1,0 +1,15 @@
+<button class="btn btn-danger mb-2" [routerLink]="['/','posts']">Go to posts!</button>
+
+<div class="card mb-1">
+  <div class="card-body">
+    <h5 class="card-title">
+      {{ post.title}}
+    </h5>
+    <h6 class="card-subtitle mb-2 text-muted">
+      userId: {{ post.userId}} - id: {{post.id}}
+    </h6>
+    <p class="card-text">
+      {{post.body}}
+    </p>
+  </div>
+</div>

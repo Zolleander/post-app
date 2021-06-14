@@ -6,15 +6,23 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './component/home/home.component';
 import { AboutComponent } from './component/about/about.component';
 import { PageNotFoundComponent } from './component/page-not-found/page-not-found.component';
+import { PostsComponent } from './component/posts/posts.component';
+import {HttpClientModule} from "@angular/common/http";
+import { PhotosComponent } from './component/photos/photos.component';
+import { PostItemComponent } from './component/post-item/post-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    PostsComponent,
+    PhotosComponent,
+    PostItemComponent,
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule
   ],
